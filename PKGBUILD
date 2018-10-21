@@ -25,7 +25,7 @@ build()
 	cd "${srcdir}/${_upstream}-v${pkgver}"
 
 	NOCONFIGURE=1 ./autogen.sh
-	PYTHON=python ./configure --prefix=/usr
+	CYTHON=cython2 PYTHON=python ./configure --prefix=/usr
 	make
 }
 
